@@ -28,10 +28,6 @@ class GenerateFeedCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        if (!$output instanceof ConsoleOutputInterface) {
-            throw new \LogicException('This command accepts only an instance of "ConsoleOutputInterface".');
-        }
-
         $time_start = microtime(true);
 
         $output->writeln('Checking for wrong feed records');

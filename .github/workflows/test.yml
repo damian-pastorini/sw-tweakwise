@@ -58,7 +58,7 @@ jobs:
 
   unit:
     needs: static
-    name: Unit testing
+    name: Phpunit
     runs-on: ubuntu-latest
     steps:
       - name: Setup Shopware
